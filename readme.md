@@ -64,7 +64,7 @@ For this experiment we use `datasetSentences.txt`
 
 Here's the visualization of word vectors trained with Skip Gram model with Negative Sampling Loss 
 
-![image.png](attachment:faaa7c12-a7fc-42a8-a9a1-57923a7be022.png)
+![image.png](word_vectors.png)
 
 Since the dimensionality of word vectors has been reduced from 10 to 2 for visualization pupose, there is a loss of information resulting in similar words not being close to eacj other. However, we see that some words exhibit rational clusters that seem to align with our intuitive understanding. For example, we see the prescence of cluster depicting emotions like amazing, woderful, boring, great. 
 
