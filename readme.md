@@ -3,7 +3,7 @@
 The key insight behind word2vec is that ‘a word is known by the company it keeps’. Concretely, consider a ‘center’ word c surrounded before and after by a context of a certain length. We term words in this contextual window ‘outside words’ (O). For example, in Figure 1, the context window length is 2, the
 center word c is ‘banking’, and the outside words are ‘turning’, ‘into’, ‘crises’, and ‘as’:
 
-![image.png](attachment:40b4bc76-404c-454e-9973-36cc62598f96.png)
+![image.png](images/skip-gram.png)
 
 Skip-gram word2vec aims to learn the probability distribution P (O|C). Specifically, given a specific word o and a specific word c, we want to predict P (O = o|C = c): the probability that word o is an ‘outside’ word for c (i.e., that it falls within the contextual window of c)
 
@@ -64,7 +64,7 @@ For this experiment we use `datasetSentences.txt`
 
 Here's the visualization of word vectors trained with Skip Gram model with Negative Sampling Loss 
 
-![image.png](word_vectors.png)
+![image.png](images/word_vectors.png)
 
 Since the dimensionality of word vectors has been reduced from 10 to 2 for visualization pupose, there is a loss of information resulting in similar words not being close to eacj other. However, we see that some words exhibit rational clusters that seem to align with our intuitive understanding. For example, we see the prescence of cluster depicting emotions like amazing, woderful, boring, great. 
 
