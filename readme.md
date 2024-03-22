@@ -75,7 +75,7 @@ Also, the stark contrast between the vectors of king and queen, both distant fro
 In this experiment we trained the skip gram model both with naive softmax and negative sampling loss function. We see that training time (total epochs = 40000) for softmax is 14059 sec and negative sampling is 9412 sec on the same machine which is almost 1.5 times less. The negative sampling loss function is more efficient than the naive-softmax loss because it replaces the computation of the softmax function over the entire vocabulary with a smaller computation over a small number of negative samples, resulting in faster training and lower computational cost.  
 
 
-#### 3. Word Anlogies
+#### 3. Word Analogies
 
 We also see word analogoes like:
 
