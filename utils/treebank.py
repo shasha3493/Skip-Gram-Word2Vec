@@ -20,7 +20,7 @@ class StanfordSentiment:
             return self._tokens
         
         '''
-        It goes through self._sentences list by list. Also, at the end it adds extra one toekn 'UNK'
+        It goes through self._sentences list by list. Also, at the end it adds extra one token 'UNK'
         self._tokens = assings as unique id to every new token it encounters, a dictionary
         self._tokenfreq = a dictionary conataining the frequency of every token
         self._word_count = total count of words in the doc (= self._cumsentlen[-1] + 1 (for 'UNK'))
@@ -127,7 +127,7 @@ class StanfordSentiment:
         # samples a center word
         wordID = random.randint(0, len(sent) - 1)
         
-        # for context words it seens numbre of words before the center word, it is less that window size ut takes everything other takes C umber of words. Same for other side of center word        
+        # for context words it sees number of words before the center word, it is less than window size it takes everything else takes C umber of words. Same for other side of center word        
         context = sent[max(0, wordID - C):wordID]
         if wordID+1 < len(sent):
             context += sent[wordID+1:min(len(sent), wordID + C + 1)]
@@ -233,7 +233,7 @@ class StanfordSentiment:
         
         '''
         samplingFreq = U(w)**0.75/Z where U(W) is the frequency of every token and 
-        Z = total number of wrods
+        Z = total number of words
         '''
         nTokens = len(self.tokens())
         samplingFreq = np.zeros((nTokens,))
@@ -276,7 +276,7 @@ class StanfordSentiment:
         threshold = 1e-5 * self._wordcount # different probability weight if count of a token is  < threshold
 
         nTokens = len(self.tokens())
-        rejectProb = np.zeros((nTokens,)) # list containing weigh tvalues for every token 
+        rejectProb = np.zeros((nTokens,)) # list containing weight values for every token 
         # loop through every unique token and asssign a wt. depending on its frequency
         for i in range(nTokens):
             w = self._revtokens[i]

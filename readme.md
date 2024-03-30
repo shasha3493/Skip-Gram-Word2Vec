@@ -66,7 +66,7 @@ Here's the visualization of word vectors trained with Skip Gram model with Negat
 
 ![image.png](images/word_vectors.png)
 
-Since the dimensionality of word vectors has been reduced from 10 to 2 for visualization pupose, there is a loss of information resulting in similar words not being close to eacj other. However, we see that some words exhibit rational clusters that seem to align with our intuitive understanding. For example, we see the prescence of cluster depicting emotions like amazing, woderful, boring, great. 
+Since the dimensionality of word vectors has been reduced from 10 to 2 for visualization purpose, there is a loss of information resulting in similar words not being close to eacj other. However, we see that some words exhibit rational clusters that seem to align with our intuitive understanding. For example, we see the presence of cluster depicting emotions like amazing, wonderful, boring, great. 
 
 Also, the stark contrast between the vectors of king and queen, both distant from one another and the cluster of woman, female, and man, highlights the complexity of gendered language and the ways in which social and cultural factors can influence our understanding of certain words.
 
@@ -77,7 +77,7 @@ In this experiment we trained the skip gram model both with naive softmax and ne
 
 #### 3. Word Analogies
 
-We also see word analogoes like:
+We also see word analogies like:
 
 `king - male + female = queen`
 

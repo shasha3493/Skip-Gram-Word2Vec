@@ -63,7 +63,7 @@ visualizeWords = [
     "hail", "coffee", "tea"]
 
 visualizeIdx = [tokens[word] for word in visualizeWords]
-# Here we use trained centerWordVectors for visualization. We can also ttake mean
+# Here we use trained centerWordVectors for visualization. We can also take mean
 visualizeVecs = wordVectors[visualizeIdx, :]
 # Using SVD to reduce the dimensionality to 2
 temp = (visualizeVecs - np.mean(visualizeVecs, axis=0))
