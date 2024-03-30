@@ -7,6 +7,8 @@ center word c is ‘banking’, and the outside words are ‘turning’, ‘into
 
 Skip-gram word2vec aims to learn the probability distribution P (O|C). Specifically, given a specific word o and a specific word c, we want to predict P (O = o|C = c): the probability that word o is an ‘outside’ word for c (i.e., that it falls within the contextual window of c)
 
+In this project, we implemented Skip Gram Word2Vec Model with Naive Softmax and Negative Sampling Loss functions
+
 ## Setup
 
 The Code is written in Python 3.12.2 . If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip
