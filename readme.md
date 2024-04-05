@@ -15,7 +15,7 @@ The Code is written in Python 3.12.2 . If you don't have Python installed you ca
 
 ```
 conda env create -f env.yml
-conda activate a2
+conda activate word2vec
 ```
 
 ## Dataset
